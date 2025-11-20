@@ -1,6 +1,7 @@
 package com.example.ganzi6.domain.center.Center;
 
 import com.example.ganzi6.domain.product.Product;
+import com.example.ganzi6.domain.reservation.Reservation;
 import com.example.ganzi6.domain.user.User.User;
 import jakarta.persistence.*;
 import lombok.*;
@@ -34,5 +35,8 @@ public class Center {
 
     @OneToMany(mappedBy = "center", cascade = CascadeType.ALL, orphanRemoval = false)
     private List<Product> products = new ArrayList<>();
+
+    @OneToMany(mappedBy = "center", cascade = CascadeType.ALL, orphanRemoval = false)
+    private List<Reservation> reservations = new ArrayList<>();
 }
 

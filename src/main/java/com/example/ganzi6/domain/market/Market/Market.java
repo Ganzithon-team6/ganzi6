@@ -1,6 +1,7 @@
 package com.example.ganzi6.domain.market.Market;
 
 import com.example.ganzi6.domain.product.Product;
+import com.example.ganzi6.domain.reservation.Reservation;
 import com.example.ganzi6.domain.user.User.User;
 import jakarta.persistence.*;
 import lombok.*;
@@ -34,4 +35,7 @@ public class Market {
 
     @OneToMany(mappedBy = "market", cascade = CascadeType.ALL, orphanRemoval = false)
     private List<Product> products = new ArrayList<>();
+
+    @OneToMany(mappedBy = "market", cascade = CascadeType.ALL, orphanRemoval = false)
+    private List<Reservation> reservations = new ArrayList<>();
 }
