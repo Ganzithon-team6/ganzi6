@@ -27,11 +27,11 @@ public class SafetyDataClient {
         UriComponentsBuilder builder = UriComponentsBuilder.fromHttpUrl(baseUrl)
                 .queryParam("serviceKey", serviceKey)
                 .queryParam("pageNo", 1)
-                .queryParam("numOfRows", 1000)   // 넉넉하게
+                .queryParam("numOfRows", 1000)
                 .queryParam("returnType", "json");
 
         String url = builder.toUriString();
-        log.info("🔎 SafetyData 요청 URL = {}", url);
+        log.info("SafetyData 요청 URL = {}", url);
 
         ResponseEntity<String> response =
                 restTemplate.getForEntity(url, String.class);
@@ -56,7 +56,7 @@ public class SafetyDataClient {
 
         boolean found = normalizedBody.contains(normalizedInput);
 
-        log.info("🔍 검증할 센터명 = {}, 결과(found) = {}", normalizedInput, found);
+        log.info("검증할 센터명 = {}, 결과(found) = {}", normalizedInput, found);
         return found;
     }
 }
