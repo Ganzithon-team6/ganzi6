@@ -47,7 +47,7 @@ public class Product {
     @Column(name = "count", nullable = false)//수량
     private Integer count;
 
-    @Column(name = "image_url", length = 1000)
+    @Column(name = "image_url", length = 300000)
     private String imageUrl;
 
     @Column(name = "created_at", updatable = false)
