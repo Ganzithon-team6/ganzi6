@@ -1,6 +1,6 @@
 # 푸다(Fooda) – 음식 기부 예약 플랫폼
 
-<img width="789" height="443" alt="image" src="https://github.com/user-attachments/assets/c31571ff-d39f-4417-9212-43d74bb89e1f" />
+<img width="789" height="443" alt="image" src="https://github.com/user-attachments/assets/573c13a4-5424-4f31-99d0-738c2f6e919f" />
 
 <br><br>
 
@@ -27,7 +27,7 @@
 
 - 가게 ↔ 복지시설 실시간 매칭·예약 시스템 제공
 
-**본 리포지토리는 푸 서비스의 백엔드 리포지토리입니다.
+**본 리포지토리는 푸다 서비스의 백엔드 리포지토리입니다.
 #### 프론트엔드 리포지토리: https://github.com/Ganzithon-team6/team6-FE
 
 
